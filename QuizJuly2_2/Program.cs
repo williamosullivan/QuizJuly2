@@ -21,6 +21,12 @@ namespace QuizJuly2_2
             Book book2 = new Book(price2);
             int value = Book.Compare(book, book2);
             Console.WriteLine("Return value is " + value);
+            if (value == 1)
+                Console.WriteLine("The first book is more expensive");
+            else if (value == 0)
+                Console.WriteLine("The 2 books are the same price");
+            else
+                Console.WriteLine("The second book is more expensive");
             Console.ReadLine();
         }
     }
